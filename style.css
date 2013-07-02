@@ -1,0 +1,535 @@
+/*
+Theme Name:     OCIO Portfolio
+Description:    Portfolio Site for IT@OSU Updates
+Author:         Chris Gross
+Author URI:     http://ocio.osu.edu
+Template:       portfolio-press
+Version:        1.0
+*/
+
+@import url("../portfolio-press/style.css");
+
+/* Base Styles and Layout */
+
+body {
+  font: 300 20px/28px proximanova, Helvetica, Arial, sans-serif;
+  color: #444;
+}
+
+h1, h2, h3, h4, h5, h6, .nav-next, .nav-previous {
+  font-family: capita, serif;
+  font-weight: normal;
+}
+
+.layout-1col .col-width,
+#filters {
+  max-width: 960px;
+  padding: 0;
+  margin: 0 auto;
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.page-template-full-width-portfolio-php #wrapper #main {
+  padding: 0;
+}
+
+
+/* Branding and Navigation*/
+
+#branding  #site-title a,
+#branding  #site-description a,
+#branding  #navigation a,
+#branding  #navigation .menu-toggle {
+  color: #000;
+}
+
+#branding #navigation ul li a:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+#wrapper #branding {
+  background-color: #fff;
+  padding: 25px 20px 15px 20px;
+  z-index: 900;
+}
+
+#navigation .menu-toggle {
+  padding-left: 0;
+}
+
+
+/* Portfolio Menu */
+
+#category-filters .mobile-only {
+  background-color: #333;
+  color: #fff;
+}
+
+#category-filters {
+  background-color:  #fff;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 800;
+}
+
+#filters li {
+  display: inline-block;
+}
+
+.ie #filters li {
+  zoom: 1;
+  *display: inline;
+}
+
+#filters a,
+#filters-menu a {
+  padding: 10px 20px;
+  display: block;
+  font-weight: bold;
+  color: #444;
+  font-size: 0.9em;
+  text-transform: u
+}
+
+#filters a.selected,
+#category-filters #filters a.selected:hover {
+  background-color: #bb0000;
+  color: white;
+}
+
+#category-filters a:hover {
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Front-Page Porfolio */
+
+#portfolio {
+  overflow: visible !important;
+  padding: 0;
+  margin: 0;
+}
+
+#main #portfolio .portfolio-item {
+  margin: 0 !important;
+  width: 33.31%;
+  cursor: pointer;
+}
+
+.title-overlay {
+  background-color: #333;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.ie7 .title-overlay{
+  width: 90%;
+}
+
+.portfolio-item-title {
+  border-bottom: 1px solid #FFFFFF;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  display: block;
+}
+
+.portfolio-item-excerpt {
+  font-weight: normal;
+}
+
+.portfolio-item-excerpt p,
+.portfolio-item-title {
+  line-height: 1.3em;
+}
+
+
+/* Content */
+
+#wrapper #main {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  overflow: hidden;
+}
+
+#main #content {
+  padding: 20px 0 1px 0;
+  margin: 0;
+  float: none;
+}
+
+#content article {
+  padding-top: 30px;
+  margin-bottom: 0;
+}
+
+#content .entry-title {
+  line-height: 1.1em;
+  padding-bottom: 15px;
+}
+
+.type-portfolio .entry-content img.attachment-portfolio-fullwidth {
+  float: left;
+  margin-right: 20px;
+  max-width: 50%;
+}
+
+.type-portfolio .entry-content img {
+  max-width: 50% !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+.type-portfolio .entry-content img.alignright {
+  margin-left: 20px;
+  width: 50%;
+}
+
+.type-portfolio .entry-content img.alignleft {
+  margin-right: 20px;
+  width: 50%;
+}
+
+.edit-link {
+  display: block;
+}
+
+.entry-meta {
+  font-size: 0.8em;
+  background-color: #fff;
+  max-width: 33.31%;
+  float: left;
+  clear: left;
+  margin-top: -20px;
+}
+
+.entry-meta-text {
+  padding: 0 20px 20px 20px;
+}
+
+.entry-meta img {
+  width: 100%;
+}
+
+.page-template-full-width-portfolio-php #nav-below {
+  display: none;
+  margin: 0 0 10px 0;
+}
+
+.entry-header {
+  text-align: left;
+}
+
+.entry-content{
+  clear: right;
+  float: right;
+  width: 64%;
+  margin-bottom: 15px;
+}
+
+#comments{
+  margin-top: 50px;
+  clear: both;
+  border-top: 1px solid #fff;
+  box-shadow: 0 -1px 0 0 #ddd;
+  padding-top: 20px;
+  padding-bottom: 0;
+  text-shadow: 0 1px 1px #FFFFFF;
+}
+
+
+/* Footer */
+
+#colophon {
+  z-index:900;
+  position: relative;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+#footer-content {
+  font-size: 0.7em;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #666;
+}
+
+#footer-logo {
+  margin-bottom: 30px;
+  max-width: 50%;
+  height: auto;
+  display: block;
+}
+
+#footer-content .secondary-signature {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+/* Social media icons */
+
+#social-icons {
+  margin-bottom: 20px;
+  display: table;
+  margin-right: 0;
+  float: right;
+}
+
+#social-icons li {
+  display: table-cell;
+}
+
+#social-icons .social-icon i {
+  margin: 0;
+  position: relative;
+}
+
+#social-icons .social-icon img {
+  border-radius: 20px;
+  margin-left: 10px;
+  background-color: #666;
+  padding: 4px;
+}
+
+#social-icons i {
+  text-decoration: none;
+}
+
+#social-icons a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+#social-icons a.social-icon-twitter:hover img {
+  background-color: #00aced;
+}
+
+#social-icons a.social-icon-youtube:hover img {
+  background-color: #bb0000;
+}
+
+#social-icons a.social-icon-flickr:hover img {
+  background-color: #FF0084;
+}
+
+#social-icons a.social-icon-linkedin:hover img {
+  background-color: #007bb6;
+}
+
+#social-icons a.social-icon-google-plus:hover img {
+  background-color: #dd4b39;
+}
+
+#social-icons a.social-icon-rss:hover img {
+  background-color: #FE9900;
+}
+
+.ie7 #social-icons li{
+  display: inline;
+}
+
+.ie7 #social-icons i{
+  color: #333;
+}
+
+
+/* Isotope CSS3 transitions */
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;`
+}
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+
+/* Medium Screens  - Responsive Break Points */
+@media (max-width: 980px) {
+  .col-width,
+  #portfolio.full-width {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  #wrapper article header, {
+    padding: 0 20px;
+  }
+
+  #content .entry-content{
+    width: 62%;
+    margin: 0 2% 15px 2%;
+  }
+}
+
+
+@media (max-width: 680px) {
+  #main #portfolio .portfolio-item {
+    width: 49.999%;
+  }
+  #footer-logo {
+    max-width: 45%;
+  }
+}
+/* Force filter menu to be visible on large screens */
+@media (min-width: 540px) {
+  #filters {
+    display: block !important;
+  }
+}
+/* Small Screens  - Responsive Break Point */
+@media (max-width: 540px) {
+
+  .mobile-block,
+  .mobile-only {
+    display: block;
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+
+  #wrapper #branding {
+    background-color: #fff;
+    padding: 25px 20px 15px 20px;
+  }
+
+  #logo {
+    float: none;
+    text-align: center;
+  }
+
+  #navigation ul li{
+    float: none;
+  }
+
+  #filters {
+    display:none;
+  }
+
+  #category-filters #filters li  {
+    display: block;
+  }
+
+  #category-filters .mobile-only i {
+    float: right;
+    margin-top: 5px;
+  }
+
+  #main #portfolio .portfolio-item {
+    width: 100%;
+  }
+
+  #content .type-portfolio .entry-content .attachment-portfolio-fullwidth {
+    float: none;
+    margin-right: 0px;
+  }
+
+  #content .entry-content{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: none;
+    padding: 20px;
+    margin-bottom: 0;
+    margin: 0;
+  }
+
+  #content .entry-content,
+  #content .entry-meta {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #content .type-portfolio .entry-content img {
+    max-width: 100%;
+  }
+
+  #footer-content {
+    text-align: center;
+  }
+
+  footer#colophon {
+    padding: 20px;
+  }
+
+  #footer-logo {
+    margin: 20px auto;
+    max-width: 95%;
+  }
+
+  footer #social-icons {
+    display: table;
+    float: none;
+    margin: 0 auto;
+    padding: 10px 0 15px 0;
+  }
+
+  footer #social-icons .social-icon {
+    margin: 0 1px;
+  }
+
+  footer #social-icons .social-icon i {
+    margin: 0 auto;
+  }
+
+  footer #social-icons a {
+    font-size: 1.5em;
+  }
+
+  footer #social-icons li {
+    display: table-cell;
+    margin: 0;
+  }
+
+  footer #social-icons .social-icon img {
+    border-radius: 40px;
+    height: auto;
+  }
+}
